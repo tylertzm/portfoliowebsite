@@ -1,0 +1,254 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;    /* Base font size */
+    line-height: 1.6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.container, .graphite-container, .work-together-container {
+    width: 100%;
+    max-width: 960px; /* Limiting max-width for large screens */
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.bottom-menu {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: bottom 0.3s;
+    z-index: 1000;
+}
+
+.button, .join-us, .social-media-handle {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;  /* Responsive font size */
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.button:hover, .join-us:hover, .social-media-handle:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Responsive Image Handling */
+.seagull {
+    border-radius: 10px;
+    margin: 10px;
+    height: 10em;
+}
+
+.graphite-image, .work-together-image {
+    width: 100%;      /* Make images responsive */
+    max-width: 300px; /* Limiting image size */
+    margin: 15px auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Responsive Typography */
+.podcast-title, .new-episode h2, .graphite-title, .work-together-container h1, .work-together-container h2 {
+    font-size: 1.5rem; /* Base responsive size */
+}
+
+/* Techstack.html */
+#tech-stack-content{
+    background: white;
+}
+
+#creative-stack-content{
+    background: white;
+
+}
+.tech-title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.tech-section {
+    color: #2a2929;
+    margin-bottom: 2em;
+}
+
+.tech-list {
+    display: flex;
+    margin-bottom: 0.5em;
+    gap: 10px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+}
+
+.tech-logo {
+    width: 40px; /* Set width to 10px */
+    height: 40px; /* Set height to 10px */
+}
+
+.collapsible {
+    background-color: #0e0e0e;
+    color: #bbb;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.active, .collapsible:hover {
+    background-color: #333;
+}
+
+.content-collapsible {
+    padding: 0 18px;
+    display: none; /* Initially hidden */
+    background-color: black;
+}
+.projects-container {
+    max-width: 20em;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+.projects-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.projects-slider::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.project {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+.project ul li {
+    margin: 5px 0;
+}
+
+.projects-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    color: #393939;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+/* End of it */
+
+@media (min-width: 768px) {
+    .podcast-title, .new-episode h2, .graphite-title, .work-together-container h1, .work-together-container h2 {
+        font-size: 2rem; /* Larger devices get larger font */
+    }
+}
+
+/* Responsive Adjustments for smaller devices */
+@media (max-width: 768px) {
+    .button, .join-us, .social-media-handle {
+        padding: 8px;
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+
+    .bottom-menu {
+        font-size: 0.8rem; /* Smaller font size for menu */
+    }
+
+    .content, .graphite-container, .work-together-container {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .projects-container{
+        padding: 8px;
+
+    }
+}
+/* Styles specifically for iPhone 13 Mini */
+@media (max-width: 375px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .navigation-menu {
+        font-size: 14px;
+    }
+}

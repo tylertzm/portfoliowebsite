@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="podcast-title">Tyler Tan</h1>
+            <p class="placeholder-text">Tech Enthusiast 🖥️ | AI Prompt Expert ⌨️ | Content Creator 🌃</p>
+            <img src="Cartoonify.png" alt="Seagull" class="seagull">
+            <div class="new-episode">
+                <h2>About Me</h2>
+                <p>Born and raised in Malaysia 🇲🇾, based in Berlin, Germany 🇩🇪</p>
+                <p class="episode-date">Studying Computer Science | Working as a Student</p>
+            </div>
+            <a href="#" class="join-us" id="tech-stack-button">Tech Stack</a>
+            <a href="#" class="social-media-handle" id="creative-stack-button">Creative Stack</a>
+        </div>
+    </div>
+    <div class="content-collapsible" id="tech-stack-content">
+        <div class="tech-section">
+            <h3>Productivity Suites</h3>
+            <div class="tech-list">
+                <img src="https://img.icons8.com/fluency/48/microsoft-365.png" alt="Microsoft 365" class="tech-logo">
+                <img src="https://img.icons8.com/fluency/240/google-logo.png" alt="Google Workspace" class="tech-logo">
+            </div>
+        </div>
+        <div class="tech-section">
+            <h3>Cloud Services</h3>
+            <div class="tech-list">
+                <img src="https://img.icons8.com/color/240/google-cloud.png" alt="Google Cloud" class="tech-logo">
+            </div>
+        </div>
+        <div class="tech-section">
+            <h3>Mobile Device Management (MDM) Systems</h3>
+            <div class="tech-list">
+                <img src="https://img.icons8.com/ios-filled/100/mobile-id-verification.png" alt="Miradore" class="tech-logo">
+                <img src="https://img.icons8.com/ios-filled/100/management.png" alt="Addigy" class="tech-logo">
+            </div>
+        </div>
+        <div class="tech-section">
+            <h3>Programming Languages</h3>
+            <div class="tech-list">
+                <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python" class="tech-logo">
+                <img src="https://img.icons8.com/color/240/java-coffee-cup-logo--v1.png" alt="Java" class="tech-logo">
+                <img src="https://img.icons8.com/ios-glyphs/90/sql.png" alt="SQL" class="tech-logo">
+            </div>
+        </div>
+        <div class="tech-section">
+            <h3>Office Applications</h3>
+            <div class="tech-list">
+                <img src="https://img.icons8.com/fluency/240/ms-excel.png" alt="Excel" class="tech-logo">
+                <img src="https://img.icons8.com/fluency/240/ms-word.png" alt="Word" class="tech-logo">
+                <img src="https://img.icons8.com/color/240/ms-powerpoint--v1.png" alt="PowerPoint" class="tech-logo">
+            </div>
+        </div>    
+    </div>
+    <div class="content-collapsible" id="creative-stack-content">
+        <div class="tech-section">
+            <h3>Graphic Design Tools</h3>
+            <div class="tech-list">
+                <img src="https://img.icons8.com/ios-filled/100/adobe-photoshop.png" alt="Adobe Photoshop" class="tech-logo">
+                <img src="https://img.icons8.com/ios-filled/100/adobe-illustrator.png" alt="Adobe Illustrator" class="tech-logo">
+            </div>
+            <h3>Workflow & Drafting</h3>
+            <div class="tech-list">
+                <img src="https://img.icons8.com/fluency/240/canva.png" alt="Canva" class="tech-logo">
+                <img src="https://img.icons8.com/fluency/240/figma.png" alt="Figma" class="tech-logo">
+
+            </div>
+        </div>
+    </div>
+    <div class="projects-container">
+        <h2>Notable Projects</h2>
+        <div class="projects-slider">
+            <div class="project">
+                <h3>Tyler's Stolen Articles</h3>
+                <p>This Streamlit web application serves as a personal tool for Tyler to gather an overview of the latest AI news. It scrapes articles from reputable sources and allows Tyler to browse through them easily.</p>
+                <ul>
+                    <li><strong>Web Scraping:</strong> Collects articles from multiple reputable AI news sources.</li>
+                    <li><strong>User-Friendly Interface:</strong> Simplifies browsing through the latest AI articles.</li>
+                    <li><strong>Streamlit Framework:</strong> Utilizes Streamlit to create an interactive and responsive web application.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Health Dashboard</h3>
+                <p>This Dash web application generates a health dashboard with various statistics and patient details. It visualizes general statistics, patient-specific information, and lab results using interactive graphs and dropdown selection.</p>
+                <ul>
+                    <li><strong>Interactive Graphs:</strong> Displays general health statistics and lab results in a visually appealing manner.</li>
+                    <li><strong>Patient-Specific Information:</strong> Offers detailed views on individual patient data.</li>
+                    <li><strong>Dropdown Selections:</strong> Enhances user interaction by allowing selections and filtering of data.</li>
+                    <li><strong>Dash Framework:</strong> Employs Dash to create a dynamic and interactive user experience.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>chatpdf-powered-by-llama3</h3>
+                <p>This project leverages the capabilities of Llama 3 to power a chat-based PDF interaction tool. The application allows users to interact with PDF documents through a chat interface, making it easier to extract and understand information contained within PDFs.</p>
+                <ul>
+                    <li><strong>Llama 3 Integration:</strong> Uses advanced natural language processing to enable conversational interactions with PDF documents.</li>
+                    <li><strong>Chat Interface:</strong> Simplifies the process of querying and retrieving information from PDFs.</li>
+                    <li><strong>Enhanced Accessibility:</strong> Makes PDF content more accessible and user-friendly through interactive chat.</li>
+                </ul>
+            </div>
+            <div class="projects-navigation">
+                <button class="arrow left-arrow">&#9664;</button>
+                <button class="arrow right-arrow">&#9654;</button>
+            </div>
+        </div>
+    </div>
+    <!-- Remaining HTML code -->
+    <div class="work-together-container">
+        <img src="background.jpg" alt="Peace Sign" class="work-together-image">
+        <h1>BEFORE YOU GO.</h1>
+        <h2>INTERESTED IN WORKING TOGETHER?</h2>
+        <p>If you are interested in collaborating or have any projects that you think I can help with, feel free to contact me. Let's create something amazing together!</p>
+    </div>
+    <div class="bottom-menu" id="bottomMenu">
+        <div class="buttons">
+            <a href="mailto:tzm2002@protonmail.com" class="button">Email</a>
+            <a href="https://www.linkedin.com/in/zhen-mei-tan-76634724a/" class="button">LinkedIn</a>
+            <a href="https://github.com/tylertzm" class="button">GitHub</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+</body>
+</html>
